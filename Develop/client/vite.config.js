@@ -8,11 +8,17 @@ export default defineConfig({
     port: 3000,
     open: true,
     proxy: {
-      '/api': {
+      // Set the proxy for the /graphql endpoint to the Apollo server
+      '/graphql': {
         target: 'http://localhost:3001',
         secure: false,
-        changeOrigin: true
-      }
+        changeOrigin: true,
+      },
+      // '/api': {
+      //   target: 'http://localhost:3001',
+      //   secure: false,
+      //   changeOrigin: true
+      // }
     }
   }
 })
