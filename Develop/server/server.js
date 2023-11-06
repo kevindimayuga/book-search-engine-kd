@@ -4,6 +4,9 @@ const { ApolloServer } = require('@apollo/server');
 const { expressMiddleware } = require('@apollo/server/express4');
 const path = require('path');
 
+// Added authMiddleware for authentication of the user
+const { authMiddleware } = require('./utils/auth');
+
 // Import typeDefs and resolvers and connection from connection.js
 const { typeDefs, resolvers } = require('./schemas');
 const db = require('./config/connection');

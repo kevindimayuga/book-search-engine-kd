@@ -76,9 +76,9 @@ I used the following resources to help guide me to complete the portfolio projec
 - [How to take a full page screenshot with a hidden Chrome shortcut](https://zapier.com/blog/full-page-screenshots-in-chrome/)
 
 
-I referred back to Module 19: PWA to review activities and the mini project to help me complete the code necessary for this project.
+I referred back to Module 21: MERN to review activities and the mini project to help me complete the code necessary for this project.
 
-Starter Code was provided by [cautious-meme](https://github.com/coding-boot-camp/cautious-meme/tree/main)
+Starter Code was provided by [solid-broccoli](https://github.com/coding-boot-camp/solid-broccoli)
 
 ## License
 
