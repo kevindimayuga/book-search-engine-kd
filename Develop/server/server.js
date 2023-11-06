@@ -30,7 +30,11 @@ const startApolloServer = async () => {
 
   // This will be the middleware that integrates Apollo server with Express and
   // allows us to serve GraphQL queries at the /graphql endpoint
-  app.use('/graphql', expressMiddleware(server));
+  // context: authMiddleware will be used to authenticate the user
+  // and get user data out of it
+  app.use('/graphql', expressMiddleware(server, {
+    context: authMiddleware
+  }));
 
   if (process.env.NODE_ENV === 'production') {
     app.use(express.static(path.join(__dirname, '../client/dist')));
