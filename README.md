@@ -19,7 +19,7 @@ The motivation behind this project is to learn how to build a MERN stack applica
 ## Screenshots, GIFs and Videos
 
 #### Book Search Engine Screenshot:
-![MERN Book Search Engine Screenshot](./Develop/client/public/book-search-engine-screenshot.png)
+![MERN Book Search Engine Screenshot](./Develop/client/public/mern-book-search-engine-screenshot.png)
 
 ## Table of Contents
 
