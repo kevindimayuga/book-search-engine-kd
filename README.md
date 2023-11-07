@@ -49,13 +49,13 @@ The following steps were taken to complete the project:
 
 - Clone repo onto local device
 - Open repo in local CLI
-- Make sure node packages are installed by running `npm i` in the CLI
-- Run `npm run start` in the CLI to start server
-    - This will run `npm run build && cd server && node server.js`
-- A dist folder will be created which will include a manifest.json and the src-sw.js files (along with all the other bundled files)
-- Open up [localhost:3000](localhost:3000) in the browser to view the text editor application
-- Click the 'Install' button in the address bar or on the home page to install the application to your local device
-- Use the text editor to write notes
+- Make sure node packages are installed by running `npm i` in root directory in the CLI
+- Run `npm run build` in the CLI to build the application
+    - A dist folder will be created which will include a manifest.json and the src-sw.js files (along with all the other bundled files)
+- Run `npm run start` in the CLI to start the server
+- Open up [localhost:3000](localhost:3000) in the browser to view the book search engine application
+- Open up [localhost:3001/graphql](localhost:3001/graphql) in the browser to view the GraphQL playground
+- Use the book search engine to search for books
 
 ## Credits
 
@@ -64,15 +64,15 @@ I used the following resources to help guide me to complete the portfolio projec
 - [MDN](https://developer.mozilla.org/en-US/)
 - [W3Schools](https://www.w3schools.com/)
 - [Professional README Guide](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
+- [Introduction to Apollo Server](https://www.apollographql.com/docs/apollo-server/)
 - [Node.js Introduction](https://www.w3schools.com/nodejs/nodejs_intro.asp)
 - [Express.js](https://www.npmjs.com/package/express)
 - [Nodemon](https://www.npmjs.com/package/nodemon)
 - [Concurrently](https://www.npmjs.com/package/concurrently)
-- [if-env](https://www.npmjs.com/package/if-env)
-- [idb](https://www.npmjs.com/package/idb)
-- [style-loader](https://www.npmjs.com/package/style-loader)
-- [css-loader](https://www.npmjs.com/package/css-loader)
-- [babel-loader](https://www.npmjs.com/package/babel-loader)
+- [apollo-server-express](https://www.npmjs.com/package/apollo-server-express)
+- [GraphQL](https://www.npmjs.com/package/graphql)
+- [@apollo/client](https://www.npmjs.com/package/@apollo/client)
+- [@apollo/server](https://www.npmjs.com/package/@apollo/server)
 - [How to take a full page screenshot with a hidden Chrome shortcut](https://zapier.com/blog/full-page-screenshots-in-chrome/)
 
 
@@ -92,8 +92,9 @@ Starter Code was provided by [solid-broccoli](https://github.com/coding-boot-cam
 ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
 ![Nodemon](https://img.shields.io/badge/NODEMON-%23323330.svg?style=for-the-badge&logo=nodemon&logoColor=%BBDEAD)
 ![Concurrently](https://img.shields.io/badge/CONCURRENTLY-%23323330.svg?style=for-the-badge&logo=concurrently&logoColor=%BBDEAD)
-![idb](https://img.shields.io/badge/IDB-%23323330.svg?style=for-the-badge&logo=idb&logoColor=%BBDEAD)
-![if-env](https://img.shields.io/badge/IFENV-%23323330.svg?style=for-the-badge&logo=if-env&logoColor=%BBDEAD)
+![GraphQL](https://img.shields.io/badge/GRAPHQL-%23323330.svg?style=for-the-badge&logo=graphql&logoColor=%BBDEAD)
+![@apollo/client](https://img.shields.io/badge/@APOLLO/CLIENT-%23323330?style=for-the-badge&logo=apollo&logoColor=%BBDEAD)
+![@apollo/server](https://img.shields.io/badge/@APOLLO/SERVER-%23323330?style=for-the-badge&logo=apollo&logoColor=%BBDEAD)
 
 ## Features
 

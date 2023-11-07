@@ -8,6 +8,9 @@ import { ApolloClient, ApolloProvider, InMemoryCache, createHttpLink } from '@ap
 import Navbar from './components/Navbar';
 import auth from './utils/auth';
 
+// This will import setContext from the @apollo/client/link/context package
+import { setContext } from '@apollo/client/link/context';
+
 // This will configure the main GraphQL endpoint for Apollo Client to use
 // The uri is the path to our GraphQL server
 const httpLink = createHttpLink({
@@ -29,7 +32,7 @@ const authLink = setContext((_, { headers }) => {
 });
 
 const client = new ApolloClient({
-  link: auth.authMiddleware.concat(httpLink),
+  link: authLink.concat(httpLink),
   // This is where Apollo Client will cache our data so that we don't have to query the server each time we want to see the data
   cache: new InMemoryCache(),
 });
