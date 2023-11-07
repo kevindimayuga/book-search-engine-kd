@@ -80,6 +80,7 @@ const SearchBooks = () => {
       return false;
     }
 
+    // removed try for API saveBook() function 
     // try {
     //   const response = await saveBook(bookToSave, token);
 
