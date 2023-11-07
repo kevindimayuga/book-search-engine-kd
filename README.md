@@ -19,7 +19,7 @@ The motivation behind this project is to learn how to build a MERN stack applica
 ## Screenshots, GIFs and Videos
 
 #### PWA Text Editor Screenshot:
-![MERN Book Search Engine Screenshot](./client/src/images/pwa-text-editor-kd-screenshot.png)
+![MERN Book Search Engine Screenshot](./Develop/client/public/book-search-engine-screenshot.png)
 
 ## Table of Contents
 
