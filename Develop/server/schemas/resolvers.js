@@ -1,7 +1,7 @@
 // import the models
 const { User, Book } = require('../models');
 // import signToken function and AuthError class from Apollo Server package
-const { signToken, AuthenticationError } = require('apollo-server-express');
+const { signToken, AuthenticationError } = require('../utils/auth');
 
 const resolvers = {
     Query: {
