@@ -19,12 +19,13 @@ const PORT = process.env.PORT || 3001;
 const server = new ApolloServer({
   typeDefs,
   resolvers,
+  // introspection: true, // Enable introspection so Apollo Studio can fetch schemas
 });
 
 // Create function to start Apollo server
 const startApolloServer = async () => {
   await server.start();
-  
+
   app.use(express.urlencoded({ extended: true }));
   app.use(express.json());
 
@@ -33,20 +34,20 @@ const startApolloServer = async () => {
   // context: authMiddleware will be used to authenticate the user
   // and get user data out of it
   app.use('/graphql', expressMiddleware(server, {
-    context: authMiddleware
+    // context: authMiddleware
   }));
 
   if (process.env.NODE_ENV === 'production') {
     app.use(express.static(path.join(__dirname, '../client/dist')));
+
+    // This will get the index.html file in the dist directory and serve it to the client
+    app.get('*', (req, res) => {
+      res.sendFile(path.join(__dirname, '../client/dist/index.html'));
+    });
   }
-  
-  // This will get the index.html file in the dist directory and serve it to the client
-  app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../client/dist/index.html'));
-  });
-  
+
   // app.use(routes);
-  
+
   // This will start the Apollo server and listen for requests
   db.once('open', () => {
     app.listen(PORT, () => {
