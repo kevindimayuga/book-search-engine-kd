@@ -14,12 +14,15 @@ The motivation behind this project is to learn how to build a MERN stack applica
 
 - GitHub Repo URL: https://github.com/kevindimayuga/book-search-engine-kd
 - GitHub Pages WebPage Deployment URL: N/A
-- Heroku Webpage Deployed URL: N/A
+- Heroku Webpage Deployed URL: https://book-search-engine-kd-a404359afe22.herokuapp.com/
 
 ## Screenshots, GIFs and Videos
 
-#### Book Search Engine Screenshot:
-![MERN Book Search Engine Screenshot](./Develop/client/public/mern-book-search-engine-screenshot.png)
+### Home Page:
+![Book Search Engine Home Screenshot](./client/public/book-search-engine-home-screenshot.png)
+
+### User Saved Books Page:
+![Book Search Engine User Saved Books Screenshot](./client/public/book-search-engine-user-saved-books-screenshot.png)
 
 ## Table of Contents
 
