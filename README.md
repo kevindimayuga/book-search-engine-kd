@@ -19,7 +19,7 @@ The motivation behind this project is to learn how to build a MERN stack applica
 ## Screenshots, GIFs and Videos
 
 ### Home Page:
-![Book Search Engine Home Screenshot](./client/public/book-search-engine-home-screenshot.png)
+![Book Search Engine Home Screenshot](./client/public/book-search-engine-homepage-screenshot.png)
 
 ### User Saved Books Page:
 ![Book Search Engine User Saved Books Screenshot](./client/public/book-search-engine-user-saved-books-screenshot.png)
