@@ -10,12 +10,12 @@ const resolvers = {
             if(context.user) {
                 const userData = await User.findOne({ _id: context.user._id })
                 .select('-__v -password')
-                .populate('books')
+                .populate('savedBooks')
 
                 return userData;
             }
 
-            throw new AuthenticationError('You are not logged in');
+            throw AuthenticationError;
         }
     },
 
@@ -26,13 +26,13 @@ const resolvers = {
             
             // if no user with that email address, return an Authentication error
             if(!user) {
-                throw new AuthenticationError('There is no user with this email address');
+                throw AuthenticationError;
             }
 
             const correctPw = await user.isCorrectPassword(password);
 
             if(!correctPw) {
-                throw new AuthenticationError('Incorrect password');
+                throw AuthenticationError;
             }
 
             // if email and password are correct, sign token and
@@ -61,7 +61,7 @@ const resolvers = {
                 return updatedUser;
             }
 
-            throw new AuthenticationError('You are not logged in');
+            throw AuthenticationError;
         },
 
         // remove a book from a user's `savedBooks` field
@@ -76,7 +76,7 @@ const resolvers = {
                 return updatedUser;
             }
 
-            throw new AuthenticationError('You are not logged in');
+            throw AuthenticationError;
         }
     },
 };

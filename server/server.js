@@ -34,7 +34,7 @@ const startApolloServer = async () => {
   // context: authMiddleware will be used to authenticate the user
   // and get user data out of it
   app.use('/graphql', expressMiddleware(server, {
-    // context: authMiddleware
+    context: authMiddleware
   }));
 
   if (process.env.NODE_ENV === 'production') {
